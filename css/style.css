@@ -1,0 +1,186 @@
+body{
+	text-align: center;
+	overflow: hidden;
+}
+
+
+#board{
+	position: relative;	
+	background-color: saddlebrown;	
+	border-radius: 5px;
+	margin:0 auto;
+	width: 577px;
+	height: 577px;
+	margin-top: 40px;
+}
+
+
+.cnv{
+	position: absolute;
+	top: 13px;
+	left: 13px;
+}
+
+#canvas{
+	z-index: 2;		
+	background-color: transparent;
+}
+
+#back{
+	z-index: 1;	
+	background-color: #FFFFE0;	
+}
+
+.pocket{
+	position: absolute;
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	height: 70px;
+	width: 50px;
+	border-radius: 5px;
+	visibility: hidden;
+}
+
+#pocket0{
+	top: 0px;
+	left: -50px;
+}
+
+#pocket1{
+	top: 0px;
+	right: -50px;
+}
+
+#pocket2{
+	bottom: 0px;
+	right: -50px;
+}
+
+#pocket3{
+	bottom: 0px;
+	left: -50px;
+}
+
+
+.label{
+	position: absolute;
+	z-index: 3;
+	background-color: #373737;
+	padding: 5px;
+	text-align: center;
+	width: 100px;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 10px;
+	line-height: 10px;
+	color: white;
+	font-family: sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 5px;
+	visibility: hidden;
+	margin: 0 auto;
+}
+
+#top{
+	top: -10px;
+	left: 0;
+	right:0;
+}
+
+#bottom{
+	bottom: -10px;
+	left: 40%;
+}
+
+
+.gatti{
+	float: left;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	box-shadow: 1px 1px 2px #373737;
+}
+
+.gatti-black{
+	background-color: #3366ff;
+}	
+
+.gatti-white{
+	background-color: purple;
+}
+
+.gatti-queen{
+	background-color: red;
+}
+
+.gatti-striker{
+	background-color: green;
+}
+
+
+#menu-box{
+	z-index: 10;
+	position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 150px;
+
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+
+    border-radius: 5px;
+    width: 300px;
+    height: 400px;
+
+}
+
+.btn{	
+	padding: 10px;
+	margin: 20px;
+	height: 30px;
+	line-height: 30px;
+	background-color: transparent;
+	color: black;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: sans-serif;
+	font-size: 15px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: deepskyblue;
+
+}
+
+.btn:hover{
+	background-color: deepskyblue;
+	color: white;
+}
+
+#toast{
+	z-index: 15;
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left:0;
+    right: 0;
+    margin: 0 auto;
+
+    float: left;
+    width: 100px;
+    height: 50px;
+    background-color: yellow;
+    color: black;
+    line-height: 50px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 5px;
+    visibility: hidden;
+}
