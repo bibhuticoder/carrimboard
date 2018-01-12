@@ -2,7 +2,7 @@
 carrimboard game in javascript from scratch
 
 ## demo
-make sure you broser supports ECMAScript 2015
+make sure you browser supports ECMAScript 2015
 https://bibhuticoder.github.io/carrimboard
 
 
